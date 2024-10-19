@@ -1,8 +1,8 @@
 'use client'
 
-import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
-import { ReactNode } from 'react'
+import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react';
+import { XMarkIcon } from '@heroicons/react/24/outline';
+import { ReactNode } from 'react';
 
 interface SideProps {
   open: boolean;
@@ -13,7 +13,7 @@ interface SideProps {
 
 export default function Side({ open, setOpen, title, children }: SideProps) {
   return (
-    <Dialog open={open} onClose={setOpen} className="z-10 absolute bottom-0">
+    <Dialog open={open} onClose={setOpen} className="z-20 absolute bottom-0">
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-background/70 bg-opacity-75 transition-opacity duration-500 ease-in-out data-[closed]:opacity-0"

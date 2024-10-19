@@ -12,6 +12,7 @@ import AnimatedModel from './animated-model'
 import TryInput from './try-input'
 
 export default function ProductTry() {
+
     return (
         <div className="min-h-screen bg-gray-100">
             <header className="bg-white py-4 px-6">
@@ -38,10 +39,10 @@ export default function ProductTry() {
                         className="md:w-1/2 mb-8 md:mb-0"
                     >
                         <h1 className="text-6xl font-thin mb-4 leading-relaxed">
-                            Chictech Never Go Out Of Style
+                            Chictech Shirts: Style and Comfort Combined
                         </h1>
                         <p className="text-xl text-gray-600 mb-6">
-                            Elevate Your Style With Timeless Chictech. Embrace The Art Of Elegance.
+                            Discover the perfect blend of style and comfort with Chictech shirts. Elevate your wardrobe with our timeless designs.
                         </p>
                         <Dialog>
                             <DialogTrigger>
@@ -53,7 +54,7 @@ export default function ProductTry() {
                         </Dialog>
                     </motion.div>
 
-                    <div className="h-screen w-[50vw] absolute  right-0 top-[20vh] bg-transparent rounded-lg overflow-hidden">
+                    <div className="h-screen w-[50vw] absolute right-0 top-[20vh] bg-transparent rounded-lg overflow-hidden">
                         <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
                             <ambientLight intensity={0.5} />
                             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
@@ -74,16 +75,16 @@ export default function ProductTry() {
                     >
                         {/* <img
                             src="/placeholder.avif"
-                            alt="Woman wearing Y's Leather Jacket"
+                            alt="Man wearing Chictech Shirt"
                             className="w-full h-auto"
                         /> */}
                         <div className="absolute top-4 right-4 bg-white rounded-full px-4 py-2 shadow-md">
-                            <span className="font-semibold">$135</span>
+                            <span className="font-semibold">$45</span>
                         </div>
                         <div className="absolute bottom-4 right-4 bg-white rounded-lg p-4 shadow-md max-w-xs">
-                            <h3 className="font-semibold mb-2">Ys Leather Jacket</h3>
+                            <h3 className="font-semibold mb-2">Chictech Classic Shirt</h3>
                             <p className="text-sm text-gray-600">
-                                Fashion Designed To Make You Feel Classy. Elegant Fashion For The Modern Gentleman.
+                                Experience the ultimate in comfort and style with our classic shirt. Perfect for any occasion.
                             </p>
                         </div>
                     </motion.div>
@@ -97,9 +98,9 @@ export default function ProductTry() {
                         className="flex items-center justify-between"
                     >
                         <div>
-                            <h3 className="text-2xl font-semibold">British Vogue24</h3>
+                            <h3 className="text-2xl font-semibold">Fashion Forward</h3>
                             <p className="text-gray-600">
-                                Dress to Express, Not to Impress. Fashion that Inspires Confidence.
+                                Stay ahead of the trends with our latest shirt designs. Fashion that speaks volumes.
                             </p>
                         </div>
                         <ArrowRight className="w-6 h-6" />
@@ -112,9 +113,9 @@ export default function ProductTry() {
                         className="flex items-center justify-between"
                     >
                         <div>
-                            <h3 className="text-2xl font-semibold">Fashion Week</h3>
+                            <h3 className="text-2xl font-semibold">Comfort Redefined</h3>
                             <p className="text-gray-600">
-                                Be the talk of the town with catchy fashion. Fashion that makes you giggle.
+                                Our shirts are designed with your comfort in mind. Feel great, look great.
                             </p>
                         </div>
                         <ArrowRight className="w-6 h-6" />

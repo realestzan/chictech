@@ -7,13 +7,13 @@ import { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
 const products = [
-    { id: 1, name: "Les Deux® Scott Sunglasses Brown Turtle", category: "Sunglasses", image: "/placeholder.avif" },
-    { id: 2, name: "Nike® Sportswear Therma FIT Legacy", category: "Hooded Jacket", image: "/placeholder.avif" },
-    { id: 3, name: "SEEN® Curly Creme Fragrance Free", category: "Skin and Hair", image: "/placeholder.avif" },
-    { id: 4, name: "Nike Universa Women's Medium-Support Mid-Rise", category: "Gym Leggings", image: "/placeholder.avif" },
+    { id: 1, name: "Classic White Shirt", category: "Shirts", image: "/placeholder.avif" },
+    { id: 2, name: "Blue Denim Shirt", category: "Shirts", image: "/img_1.avif" },
+    { id: 3, name: "Flannel Plaid Shirt", category: "Shirts", image: "/img_2.avif" },
+    { id: 4, name: "Linen Casual Shirt", category: "Shirts", image: "/img_3.avif" },
 ]
 
-const brands = ['POLICE', 'Ray-Ban', 'GUCCI']
+const brands = ['H&M', 'Zara', 'Uniqlo']
 
 export default function ProductDetail() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -35,7 +35,7 @@ export default function ProductDetail() {
     }
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="h-screen bg-white overflow-hidden">
             <header className="sticky top-0 z-50 bg-white shadow-sm">
                 <div className="container mx-auto px-4 py-4 flex items-center justify-between">
                     <div className="flex items-center space-x-4">
@@ -120,13 +120,12 @@ export default function ProductDetail() {
                                 <h2 className="text-6xl font-semibold mb-4">
                                     NEW PROMAX
                                     <br />
-                                    EYEWEAR
+                                    SHIRT
                                     <br />
                                     COLLECTION
                                 </h2>
                                 <p className="text-gray-600 mb-4 max-w-md">
-                                    An iconic collection inspired by the past and reinvented for
-                                    the future: discover the new sunglasses for him and her.
+                                    Discover our latest collection of shirts, perfect for any occasion. From casual to formal, find the perfect shirt for you.
                                 </p>
                                 <Link
                                     href="/collection"

@@ -1,6 +1,7 @@
 import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
 import * as THREE from 'three';
+import { Model } from './man';
 
 export default function AnimatedModel(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>(null)
@@ -14,10 +15,9 @@ export default function AnimatedModel(props: JSX.IntrinsicElements['group']) {
   })
 
   return (
-    // <group ref={group} {...props}>
-    // <Model />
-    <></>
-    // </group>
+    <group ref={group} {...props}>
+      <Model />
+    </group>
   )
 }
 // 
